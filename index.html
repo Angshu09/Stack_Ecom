@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Stack E-com</title>
+  </head>
+  <body>
+    <!-- header start  -->
+    <header class="header-section">
+      <div class="container">
+        <div class="top">
+          <button class="btn-style">
+            Free Shipping 30-day return refund guarantee
+            <span
+              ><i class="fa-solid fa-arrow-right" style="color: #ffffff"></i
+            ></span>
+          </button>
+          <div>
+            <button class="btn-style">Sign In</button>
+            <button class="btn-style">Sign Up</button>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <div><p>Stack E-com</p></div>
+
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Products</li>
+            <li>Contact</li>
+            <li>
+              <a href="./src/showAddToCart.html" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="cart-no"></p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header end  -->
+
+    <!-- main start  -->
+    <main>
+      <div class="container">
+        <!-- hero start  -->
+        <div class="hero">
+          <div class="hero-text">
+            <h1>Shop from here</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+              sed. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Impedit, repudiandae.
+            </p>
+          </div>
+          <img src="public/ecomhero.jpg" alt="" />
+        </div>
+        <!-- hero end  -->
+
+        <!-- discount section start  -->
+        <div class="discount-section">
+          <div class="discount-cards">
+            <div class="card">
+              <div class="card-content">
+                <p class="sale-text">NEW YEAR SALE</p>
+                <h2 class="offer-text">Get An Extra 50% Off on Laptops</h2>
+                <a href="#" class="cta">SHOP NOW</a>
+              </div>
+              <div class="card-image">
+                <img src="public/laptop.webp" alt="Laptop" />
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-content">
+                <p class="sale-text">LIMITED TIME OFFER</p>
+                <h2 class="offer-text">Flat 40% Off on Smartphones</h2>
+                <a href="#" class="cta">BUY NOW</a>
+              </div>
+              <div class="card-image">
+                <img src="public/nothing.webp" alt="Smartphone" />
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-content">
+                <p class="sale-text">SPECIAL DEAL</p>
+                <h2 class="offer-text">Up to 60% Off on Headphones</h2>
+                <a href="#" class="cta">GRAB NOW</a>
+              </div>
+              <div class="card-image">
+                <img src="public/headphone.jpeg" alt="Headphones" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- discount section end  -->
+
+        <!-- feature section start  -->
+        <div class="feature-section">
+          <div class="fheading">
+            <h1>Why Choose Us?</h1>
+          </div>
+
+          <div class="feature-card">
+            <div class="fcard">
+              <h3>High-Quality Products</h3>
+              <p>
+                We offer premium quality products with strict quality control.
+              </p>
+            </div>
+            <div class="fcard">
+              <h3>Fast & Free Shipping</h3>
+              <p>
+                Enjoy fast and free delivery on all orders with no extra cost.
+              </p>
+            </div>
+            <div class="fcard">
+              <h3>Secure Payments</h3>
+              <p>
+                Your transactions are safe with our encrypted payment gateway.
+              </p>
+            </div>
+            <div class="fcard">
+              <h3>24/7 Customer Support</h3>
+              <p>
+                We are here to assist you anytime with dedicated customer
+                support.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- feature section end  -->
+
+        <!-- explore section start  -->
+        <div class="explore-section">
+          <div class="explore-heading">
+            <h1>Explore Stack E-com</h1>
+          </div>
+
+          <div class="explore-products">
+            <div class="products">
+
+            </div>
+          </div>
+        </div>
+        <!-- explore section end  -->
+
+        <!--  template section start  -->
+        <template class="product-template">
+          <div class="product-card" id="card-id">
+            <span class="product-category"></span>
+            <img
+              src=""
+              alt=""
+              class="product-image"
+            />
+
+            <h3 class="product-title"></h3>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="rating-no"></span>
+            </div>
+
+            <p class="product-description">
+              
+            </p>
+
+            <div class="product-price">
+              <span class="current-price"></span>
+              <span class="old-price"></span>
+            </div>
+
+            <div class="quantity-selector">
+              <span>Quantity (Pieces)</span>
+              <div class="qty-container">
+                <button class="qty-btn minus">-</button>
+                <p class="quantity-count">1</p>
+                <button class="qty-btn plus">+</button>
+              </div>
+            </div>
+
+            <button class="add-to-cart">
+              <i class="fas fa-shopping-cart"></i> Add To Cart
+            </button>
+          </div>
+        </template>
+        <!--  template section end  -->
+
+        <!-- benefit section start  -->
+        <div class="benefits-section">
+          <div class="benefits">
+            <div class="benefit-card">
+              <span>1</span>
+              <h3>Wide Selection</h3>
+              <p>
+                We offer a diverse range of gadgets, ensuring you find what
+                meets your needs.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <span>2</span>
+              <h3>Quality Assurance</h3>
+              <p>
+                All products go through rigorous quality checks to ensure
+                reliability and performance.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <span>3</span>
+              <h3>Competitive Prices</h3>
+              <p>
+                Enjoy great value with our competitive prices without
+                compromising on quality.
+              </p>
+            </div>
+          </div>
+
+          <div class="center-visual">
+            <img src="public/ecomgraphic.png" alt="Benefit Image" />
+          </div>
+
+          <div class="benefits">
+            <div class="benefit-card">
+              <span>4</span>
+              <h3>Expert Guidance</h3>
+              <p>
+                Our knowledgeable staff helps you make informed purchasing
+                decisions.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <span>5</span>
+              <h3>Convenient Shopping</h3>
+              <p>
+                Our user-friendly website ensures a seamless shopping experience
+                from browsing to checkout.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <span>6</span>
+              <h3>Excellent Service</h3>
+              <p>
+                We prioritize customer satisfaction with prompt assistance and
+                reliable service.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- benefit section end  -->
+      </div>
+    </main>
+    <!-- main end  -->
+
+    <!-- Footer start  -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-column">
+          <h3>Stack E-com</h3>
+          <p>
+            Your go-to destination for the best gadgets at unbeatable prices.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact Us</h4>
+          <p>Email: support@stackecom.com</p>
+          <p>Phone: +91 xxxxxxxxxx</p>
+          <p>Address: San Francisco</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 ShopEase. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer end  -->
+
+    <script
+      src="https://kit.fontawesome.com/2795d8c0e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

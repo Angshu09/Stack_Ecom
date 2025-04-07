@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>addToCart Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header start  -->
+    <header class="header-section">
+      <div class="container">
+        <div class="top">
+          <button class="btn-style">
+            Free Shipping 30-day return refund guarantee
+            <span
+              ><i class="fa-solid fa-arrow-right" style="color: #ffffff"></i
+            ></span>
+          </button>
+          <div>
+            <button class="btn-style">Sign In</button>
+            <button class="btn-style">Sign Up</button>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <div><p>Stack E-com</p></div>
+
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Products</li>
+            <li>Contact</li>
+            <li>
+              <a href="addToCart.html" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="cart-no"></p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header end  -->
+
+    <!-- Main section -->
+    <section class="showCartSection">
+      <div class="showCartContainer">
+        <div class="cartItems"></div>
+
+        <div class="cartTotal">
+          <div class="totalAmount">
+            <p>Cart Total</p>
+
+            <div class="total-div">
+              <p>Sub Total:</p>
+              <p class="subTotal">0</p>
+            </div>
+
+            <div class="total-div">
+              <p>Tax:</p>
+              <p class="tax">40</p>
+            </div>
+
+            <div class="total-div">
+              <p>Final Total:</p>
+              <p class="finalTotal">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main section end -->
+
+    <!-- Cart product template -->
+    <template class="cartProductTemplate">
+      <div class="cartProductCard">
+        <span class="cartProductBadge"></span>
+        <img src="" alt="" class="cartProductImage" />
+        <span class=" cartProductTitle"></span>
+        <span class="cartProductPrice"></span>
+        <div class="cartProductQuantityControls">
+          <button class="cartProductButtonMinus">-</button>
+          <span class="cartProductQty"></span>
+          <button class="cartProductButtonPlus">+</button>
+        </div>
+        <button class="cartProductRemoveButton">Remove</button>
+      </div>
+    </template>
+
+    <!-- Footer start  -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-column">
+          <h3>Stack E-com</h3>
+          <p>
+            Your go-to destination for the best gadgets at unbeatable prices.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact Us</h4>
+          <p>Email: support@stackecom.com</p>
+          <p>Phone: +91 xxxxxxxxxx</p>
+          <p>Address: San Francisco</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 ShopEase. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer end  -->
+
+    <script
+      src="https://kit.fontawesome.com/2795d8c0e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="showAddToCart.js"></script>
+  </body>
+</html>
