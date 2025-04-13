@@ -9,10 +9,10 @@ export default function responsive() {
   function updateImage() {
     if (window.innerWidth <= 768) {
       // For mobile screens
-      heroImg.src = "../public/ecomherophone.png";
+      heroImg.src = "https://raw.githubusercontent.com/Angshu09/Stack_Ecom/refs/heads/main/public/ecomherophone.png";
     } else {
       // For larger screens
-      heroImg.src = "../public/ecomhero.png";
+      heroImg.src = "https://raw.githubusercontent.com/Angshu09/Stack_Ecom/refs/heads/main/public/ecomhero.png";
     }
   }
 
