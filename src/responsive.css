@@ -69,22 +69,19 @@
 
     .nav ul{
         position: absolute;
-        border: 1px solid grey;
+        right: 0; 
+        top: -1000%;
         background-color: #fff;
-        flex-direction: column;
+        border: 1px solid grey;
         padding: 40px;
         border-radius: 15px;
-        right: -500%;
-        transition: right 0.3s ease;
-        top: 10px;
+        flex-direction: column;
+        transition: top 0.5s ease;
+        z-index: 999;
     }
 
     .hamburger{
         display: block !important;
-    }
-
-    .nav ul.active {
-        right: 0;
     }
 
     .discount-cards{
