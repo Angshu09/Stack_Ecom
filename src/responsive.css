@@ -77,7 +77,6 @@
         right: -500%;
         transition: right 0.3s ease;
         top: 10px;
-        display: none;
     }
 
     .hamburger{
