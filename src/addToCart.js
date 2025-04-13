@@ -3,7 +3,7 @@ import toggleToast from "./toggleToast";
 import updateCartValue from "./updateCartValue";
 
 // On page load, update the cart item count using data from local storage
-updateCartValue(getCartProductFromLS());
+updateCartValue();
 
 export default function addToCart(ele, id) {
   // Get the current list of products from local storage
@@ -62,7 +62,7 @@ export default function addToCart(ele, id) {
   toggleToast("Product is added")
 
   // Update the UI with the new cart total
-  updateCartValue(arrOfProducts);
+  updateCartValue();
 
   // After adding to the cart make the quantity count 1
   currentElement.querySelector(".quantity-count").innerText = 1

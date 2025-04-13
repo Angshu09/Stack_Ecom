@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>addToCart Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
     <!-- header start  -->
     <header class="header-section">
       <div class="container">
         <div class="top">
-          <button class="btn-style">
+          <button class="btn-style top-shipbutton">
             Free Shipping 30-day return refund guarantee
             <span
               ><i class="fa-solid fa-arrow-right" style="color: #ffffff"></i
@@ -24,7 +25,7 @@
         </div>
 
         <nav class="nav">
-          <div><p>Stack E-com</p></div>
+          <div><img class="logo-image" src="../public/logo.png" alt="" /></div>
 
           <ul>
             <li>Home</li>
@@ -44,32 +45,34 @@
     <!-- header end  -->
 
     <!-- Main section -->
-    <section class="showCartSection">
-      <div class="showCartContainer">
-        <div class="cartItems"></div>
+    <div class="container">
+      <section class="showCartSection">
+        <div class="showCartContainer">
+          <div class="cartItems"></div>
 
-        <div class="cartTotal">
-          <div class="totalAmount">
-            <p>Cart Total</p>
+          <div class="cartTotal">
+            <div class="totalAmount">
+              <p>Cart Total</p>
 
-            <div class="total-div">
-              <p>Sub Total:</p>
-              <p class="subTotal">0</p>
-            </div>
+              <div class="total-div">
+                <p>Sub Total:</p>
+                <p class="subTotal">0</p>
+              </div>
 
-            <div class="total-div">
-              <p>Tax:</p>
-              <p class="tax">40</p>
-            </div>
+              <div class="total-div">
+                <p>Tax:</p>
+                <p class="tax">40</p>
+              </div>
 
-            <div class="total-div">
-              <p>Final Total:</p>
-              <p class="finalTotal">0</p>
+              <div class="total-div">
+                <p>Final Total:</p>
+                <p class="finalTotal">0</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <!-- Main section end -->
 
     <!-- Cart product template -->
@@ -77,7 +80,7 @@
       <div class="cartProductCard">
         <span class="cartProductBadge"></span>
         <img src="" alt="" class="cartProductImage" />
-        <span class=" cartProductTitle"></span>
+        <span class="cartProductTitle"></span>
         <span class="cartProductPrice"></span>
         <div class="cartProductQuantityControls">
           <button class="cartProductButtonMinus">-</button>

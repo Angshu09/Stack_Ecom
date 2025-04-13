@@ -1,6 +1,7 @@
 import getCartProductFromLS from "./getCartProductsFromLS"; // Importing function to get products from local storage
 import updateCartTotal from "./updateCartTotal";
-import toggleToast from "./toggleToast"
+import toggleToast from "./toggleToast";
+import updateCartValue from "./updateCartValue";
 
 export default function removeProductFromCart(id) {
   // Retrieve the list of products stored in local storage
@@ -14,7 +15,7 @@ export default function removeProductFromCart(id) {
 
   // Select the product card in the DOM that needs to be removed
   const removableCard = document.querySelector(`#cartCard${id}`);
-  
+
   // If the card exists in the DOM, remove it
   if (removableCard) {
     removableCard.remove();
@@ -22,5 +23,8 @@ export default function removeProductFromCart(id) {
   }
 
   //update cart total amount after removing
-  updateCartTotal()
+  updateCartTotal();
+
+  //Update the cart total item value in cart page
+  updateCartValue();
 }

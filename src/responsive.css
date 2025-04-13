@@ -1,0 +1,115 @@
+@media screen and (max-width: 1210px) {
+    .container{
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .card{
+        flex-direction: column-reverse;
+    }
+
+    .card-image img{
+        height: 110px !important;
+    }
+
+    .offer-text{
+        font-size: 15px !important;
+    }
+
+    .feature-card{
+        grid-template-columns: repeat(2, 1fr) !important;
+
+    }
+
+    .products{
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .benefits-section{
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    .benefits{
+        width: 100% !important;   
+        flex-direction: row !important;
+    }
+
+    .center-visual{
+        width: 60% !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cartProductCard{
+        padding: 10px !important;
+    }
+    .cartProductBadge{
+        display: none;
+
+    }
+    .cartProductTitle{
+        display: none;
+    }
+
+    .products{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .benefits{
+        width: 100% !important;   
+        display: block !important;
+    }
+
+
+    .top-shipbutton{
+        display: none;
+    }
+
+    .nav ul{
+        position: absolute;
+        border: 1px solid grey;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 40px;
+        border-radius: 15px;
+        right: -500%;
+        transition: right 0.3s ease;
+        top: 10px;
+        display: none;
+    }
+
+    .hamburger{
+        display: block !important;
+    }
+
+    .nav ul.active {
+        right: 0;
+    }
+
+    .discount-cards{
+        grid-template-columns: repeat(2, 1fr) !important;
+
+    }
+}
+
+@media screen and (max-width: 450px){
+    .products{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .discount-cards{
+        grid-template-columns: repeat(1, 1fr) !important;
+
+    }
+
+    .feature-card{
+        grid-template-columns: repeat(1, 1fr) !important;
+
+    }
+
+    h1{
+        font-size: 24px;
+    }
+}

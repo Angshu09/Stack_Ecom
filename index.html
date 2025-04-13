@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/responsive.css" />
     <title>Stack E-com</title>
   </head>
   <body>
@@ -11,12 +12,13 @@
     <header class="header-section">
       <div class="container">
         <div class="top">
-          <button class="btn-style">
+          <button class="btn-style top-shipbutton">
             Free Shipping 30-day return refund guarantee
             <span
               ><i class="fa-solid fa-arrow-right" style="color: #ffffff"></i
             ></span>
           </button>
+          <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
           <div>
             <button class="btn-style">Sign In</button>
             <button class="btn-style">Sign Up</button>
@@ -24,13 +26,13 @@
         </div>
 
         <nav class="nav">
-          <div><p>Stack E-com</p></div>
+          <div><img class="logo-image" src="public/logo.png" alt="" /></div>
 
           <ul>
             <li>Home</li>
+            <li>Why Us?</li>
+            <li>Explore</li>
             <li>About</li>
-            <li>Products</li>
-            <li>Contact</li>
             <li>
               <a href="./src/showAddToCart.html" class="cart">
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -48,15 +50,7 @@
       <div class="container">
         <!-- hero start  -->
         <div class="hero">
-          <div class="hero-text">
-            <h1>Shop from here</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-              sed. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Impedit, repudiandae.
-            </p>
-          </div>
-          <img src="public/ecomhero.jpg" alt="" />
+          <img src="" alt="" />
         </div>
         <!-- hero end  -->
 
@@ -142,9 +136,7 @@
           </div>
 
           <div class="explore-products">
-            <div class="products">
-
-            </div>
+            <div class="products"></div>
           </div>
         </div>
         <!-- explore section end  -->
@@ -153,11 +145,7 @@
         <template class="product-template">
           <div class="product-card" id="card-id">
             <span class="product-category"></span>
-            <img
-              src=""
-              alt=""
-              class="product-image"
-            />
+            <img src="" alt="" class="product-image" />
 
             <h3 class="product-title"></h3>
             <div class="product-rating">
@@ -169,9 +157,7 @@
               <span class="rating-no"></span>
             </div>
 
-            <p class="product-description">
-              
-            </p>
+            <p class="product-description"></p>
 
             <div class="product-price">
               <span class="current-price"></span>
